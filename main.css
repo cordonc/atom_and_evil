@@ -1,0 +1,21 @@
+#container {
+    width: 100%;
+    height: var(--viewport-hight);
+    float: left;
+}
+body {
+    font-size: 1rem;
+    line-height: 1;
+
+}
+p {
+    line-height: inherit
+}
+
+.column {
+   flex: 50%;
+}
+
+.row {
+    display: flex;
+}
