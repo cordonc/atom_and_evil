@@ -119,6 +119,18 @@ h2 {
 
 }
 
+h1 {
+    font-family: 'Inconsolata';
+    font-style: oblique;
+    font-weight: 250; 
+    font-size: 4em;
+    color: #28346658;
+    position: sticky;
+    text-align: center;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
 /* Hover */
 .hovertext {
     position: webkit-sticky;
