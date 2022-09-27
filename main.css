@@ -1,21 +1,190 @@
-#container {
-    width: 100%;
-    height: var(--viewport-hight);
-    float: left;
+html {
+    scroll-behavior: smooth;
 }
+
+
+
 body {
-    font-size: 1rem;
-    line-height: 1;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1em;
+    line-height: 1.5em;
+    /* or 125% */
+    letter-spacing: 0.14em;
+    color: #000000;
+    /* Color Gradiant Angle */
+    /* background: linear-gradient(180deg, #f2727380 33.33%, #35465c00 100%); */
 
 }
+
+/* Color Gradient Transition */
+body {
+    background: linear-gradient(to bottom, #f2d4de4a, #c7eddcd5, #ebddd4a3, #d8daf4, #7d7c81);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), #cfd6b95e 75%);
+}
+
+
+/* Not demo related 
+
+Thanks to Corey Ginnivan for some design advice */
+
+
+/* type */
+
 p {
-    line-height: inherit
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: black;
 }
 
-.column {
-   flex: 50%;
+p.quote {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 35px;
+    /* or 233% */
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: #000000;
+    width: 55%;
+
+
 }
 
-.row {
+p.bio {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: black;
+    word-spacing: .5em;
+}
+
+h2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 35px;
+    /* or 219% */
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+
+p.diary {
+
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    letter-spacing: 0.14em;
+    color: #000000;
+    text-align: justify;
+
+}
+
+/* Hover */
+.hovertext {
+    position: webkit-sticky;
+    position: sticky;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 20em;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+    padding: 5px 5px;
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Page and Section */
+
+.page {
+    width: calc(50vw - 6px);
+    min-height: 100vh;
+
+    box-sizing: border-box;
+    padding: 40px 60px;
+
+    display: inline-block;
+    vertical-align: bottom;
+
+    text-align: left;
+
+    position: relative;
+}
+
+section {
     display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+section div {
+    width: 85%;
+}
+
+section div.text {
+    padding: 240px 60px 60px;
+
+}
+
+/* Page Break Passage of Time */
+.pageBreak75 {
+    margin: 75%
+}
+
+.pageBreak100 {
+    margin: 100%;
+
+}
+
+.pageBreak200 {
+    margin: 200%;
+
+}
+
+.pageBreak300 {
+    margin: 300%;
 }
