@@ -56,7 +56,7 @@ p {
 p.quote {
     font-family: 'Inconsolata';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
     line-height: 35px;
     /* or 233% */
@@ -79,6 +79,29 @@ p.bio {
     word-spacing: .5em;
 }
 
+p.diary {
+
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    letter-spacing: 0.14em;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 2em;
+
+}
+
+p.bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+
+}
+
+/* Date */
 h2 {
     position: -webkit-sticky;
     position: sticky;
@@ -93,21 +116,6 @@ h2 {
     letter-spacing: 0.1em;
 
     color: #000000;
-
-}
-
-
-p.diary {
-
-    font-family: 'Inconsolata';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    /* or 125% */
-    letter-spacing: 0.14em;
-    color: #000000;
-    text-align: justify;
 
 }
 
@@ -162,7 +170,7 @@ section {
 }
 
 section div {
-    width: 85%;
+    width: 87%;
 }
 
 section div.text {
@@ -171,6 +179,15 @@ section div.text {
 }
 
 /* Page Break Passage of Time */
+
+.pageBreak20 {
+    margin: 20%;
+}
+
+.pageBreak35 { 
+    margin: 35%;
+}
+
 .pageBreak75 {
     margin: 75%
 }
