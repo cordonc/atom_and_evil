@@ -1,0 +1,14 @@
+ <section>
+        <div class="column date">
+            <span class="hovertext" data-hover="xyz days since graduation">
+                <h2>Insert date</h2>
+            </span>
+
+        </div>
+
+        <div class="diary">
+            <p> Insert text </p>
+                <p># </p>
+            
+        </div>
+</section>
