@@ -46,8 +46,8 @@ Thanks to Corey Ginnivan for some design advice */
 p {
     font-family: 'Inconsolata';
     font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: 275;
+    font-size: 1em;
     line-height: 35px;
     letter-spacing: 0.1em;
     color: black;
@@ -101,24 +101,7 @@ p.bold {
 
 }
 
-/* Date */
-h2 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 15px;
-    font-family: 'Inconsolata';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 35px;
-    /* or 219% */
-
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-}
-
+/* Month Date */
 h1 {
     font-family: 'Inconsolata';
     font-style: oblique;
@@ -130,6 +113,41 @@ h1 {
     margin-right: 1em;
     margin-bottom: 2em;
 }
+
+/* Diary Date */
+h2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: .75em;
+    /* or 219% */
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+/* Time Entry */
+h3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 45px;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    /* or 219% */
+
+    letter-spacing: 0.1em;
+
+    color: #3d30304a;
+
+}
+
 
 /* Hover */
 .hovertext {
