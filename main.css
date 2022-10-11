@@ -68,6 +68,19 @@ p.quote {
 
 }
 
+p.schizo {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 35px;
+    /* or 233% */
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: #46463fab;
+    width: 55%;
+}
+
 p.bio {
     font-family: 'Inconsolata';
     font-style: normal;
@@ -101,17 +114,17 @@ p.bold {
 
 }
 
-/* Month Date */
+/* schizo */
 h1 {
     font-family: 'Inconsolata';
-    font-style: oblique;
     font-weight: 250; 
-    font-size: 4em;
+    font-size: 2em;
     color: #28346658;
-    position: sticky;
-    text-align: center;
+    position: relative;
+    text-align: start;
     margin-right: 1em;
     margin-bottom: 2em;
+    line-height: 1em;
 }
 
 /* Diary Date */
@@ -147,11 +160,79 @@ h3 {
     color: #3d30304a;
 
 }
+/* TOC */ 
+h4 {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: .75em;
+    /* or 219% */
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+
+
+}
+
+/* Table of Contents */
+
+.page-number-toc {
+    width: 40px, 40px, 40px, 40px;
+    text-align: center;
+    margin-right: 1vw;
+    display: inline-box;
+}
+
+/* #toc h2 {
+    width: 100%;
+    text-align: left;
+} */
+
+#toc ul {
+    margin: 80px;
+    font-size: 1rem;
+    line-height: 2em;
+
+
+}
+
+#toc ul li {
+    list-style-type: none;
+}
+
+#diary ul li {
+    list-style-type: none;
+}
+
+#toc ul li a:hover{
+    color: black;
+    opacity: .5;
+    color: white;
+    text-decoration: none;
+    background: #32374ebe;
+    
+}
+
+.runningHead {
+    bottom: 3em;
+    left: 3em;
+    z-index: auto;
+    position: -webkit-sticky;
+    position: static
+
+}
+
+
+
+
 
 
 /* Hover */
 .hovertext {
-    position: webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
 }
 
@@ -177,6 +258,15 @@ h3 {
 }
 
 /* Page and Section */
+
+.columns {
+    column-width: 25%;
+    height: 100vh;
+    column-gap: 0;
+    min-width: 50vw;
+    top: 0;
+    left: 0;
+}
 
 .page {
     width: calc(50vw - 6px);
