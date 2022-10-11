@@ -216,12 +216,11 @@ h4 {
     
 }
 
-.runningHead {
+.endNote {
     bottom: 3em;
     left: 3em;
-    z-index: auto;
-    position: -webkit-sticky;
-    position: static
+    z-index: 1;
+    position: fixed;
 
 }
 
