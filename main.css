@@ -216,6 +216,13 @@ h4 {
     
 }
 
+a:-webkit-any-link {
+    color: rgba(112, 90, 109, 0.75);
+    cursor: s-resize;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
 .endNote {
     bottom: 3em;
     left: 3em;
